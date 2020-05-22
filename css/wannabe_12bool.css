@@ -1,0 +1,98 @@
+/* IMPOSTAZIONI GENERALI */
+
+.centratura_riga {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lezioni, #steps, #why {
+  text-align: center;
+}
+
+/* BLOCCO LEZIONI */
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* BLOCCO PERCHE */
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+}
+
+/* COMMON */
+
+.grey {
+  background-color: #f9f9f9;
+}
+
+/* VERSIONE DESKTOP */
+@media all and (min-width: 993px) {
+
+  /* IMPOSTAZIONI GENERALI */
+
+  .centratura_riga {
+    width: 992px;
+    margin-top: 100px;
+  }
+
+  /* BLOCCO PERCHE */
+
+  .first, .second, .third {
+    margin-top: 80px;
+  }
+
+  #why .row img {
+    padding: 30px
+  }
+
+  /* COMMON */
+
+  img {
+    height: 200px;
+  }
+
+}
+
+/* VERSIONE TABLET */
+@media all and (min-width: 769px) and (max-width: 992px) {
+
+  /* IMPOSTAZIONI GENERALI */
+
+  .centratura_riga {
+    width: 100%;
+    margin-top: 75px;
+  }
+
+  /* BLOCCO LEZIONI */
+
+  #lezioni .row img {
+    max-width: 100%;
+  }
+
+  /* BLOCCO STEPS */
+  .left, .central {
+    margin-bottom: 50px;
+  }
+
+  /* BLOCCO PERCHE */
+
+  .first, .second, .third {
+    margin-top: 50px;
+  }
+
+  #why .row img {
+    padding: 22.5px;
+  }
+
+  /* COMMON */
+  img {
+    height: 150px;
+  }
+
+}
