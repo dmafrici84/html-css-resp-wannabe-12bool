@@ -1,10 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
 
-.centratura_riga {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #lezioni, #steps, #why {
   text-align: center;
 }
@@ -37,14 +32,14 @@
 
   /* IMPOSTAZIONI GENERALI */
 
-  .centratura_riga {
+  .container {
     width: 992px;
     margin-top: 100px;
   }
 
   /* BLOCCO PERCHE */
 
-  .first, .second, .third {
+  #why .rov>.col_lg_12 {
     margin-top: 80px;
   }
 
@@ -66,7 +61,7 @@
 
   /* IMPOSTAZIONI GENERALI */
 
-  .centratura_riga {
+  .container {
     width: 100%;
     margin-top: 50px;
   }
@@ -78,13 +73,18 @@
   }
 
   /* BLOCCO STEPS */
-  #steps .left, .central {
+
+  #steps .row> .col_md_4 {
     margin-bottom: 50px;
+  }
+
+  #steps .row> .col_md_4:last-child {
+    margin-bottom: 0;
   }
 
   /* BLOCCO PERCHE */
 
-  .first, .second, .third {
+  #why .row> .col_md_10 {
     margin-top: 50px;
   }
 
@@ -93,6 +93,7 @@
   }
 
   /* COMMON */
+
   img {
     height: 150px;
   }
@@ -103,19 +104,34 @@
 
 @media all and (max-width: 768px) {
 
-  .centratura_riga {
+  .container {
     width: 100%;
     margin-top: 20px;
   }
 
-  /* BLOCCO LEZIONI e BLOCCO STEPS */
-  .left, .central, .right {
+  /* BLOCCO LEZIONI */
+
+  #lezioni .row> .col_xs_8 {
     margin-bottom: 50px;
+  }
+
+  /* BLOCCO STEPS */
+
+  #steps .row> .col_xs_8 {
+    margin-bottom: 50px;
+  }
+
+  #steps .row> .col_xs_8:last-child {
+    margin-bottom: 0;
   }
 
   /* BLOCCO PERCHE */
 
-  .first, .second, .third {
+  #why .container {
+    margin-top: 70px;
+  }
+
+  #why .row> .col_xs_8 {
     margin-top: 40px;
   }
 
